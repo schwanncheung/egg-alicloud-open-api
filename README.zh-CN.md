@@ -20,19 +20,19 @@
 [download-image]: https://img.shields.io/npm/dm/egg-alicloud-open-api.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-alicloud-open-api
 
-[AliCloud OpenAPI](https://github.com/aliyun/openapi-core-nodejs-sdk) plugin for egg framework
+[AliCloud OpenAPI](https://github.com/aliyun/openapi-core-nodejs-sdk) 插件是为 egg 提供调用阿里云开放接口的能力
 
-## Install
+## 安装
 
 ```bash
 $ npm i egg-alicloud-open-api --save
 ```
 
-## Usage
+## 用法
 
-### Enable the plugin
+### 启用插件
 
-Change `${app_root}/config/plugin.js` to enable AliCloud plugin:
+通过 ${app_root}/config/plugin.js 配置启动 AliCloud 插件:
 
 ```js
 exports.aliCloud = {
@@ -41,9 +41,9 @@ exports.aliCloud = {
 };
 ```
 
-### Configuration
+### 配置
 
-Configure information in ${app_root}/config/config.{env}.js:
+在 ${app_root}/config/config.{env}.js 配置一些全局信息
 
 ```js
 // ${app_root}/config/config.${env}.js
@@ -56,10 +56,10 @@ config.aliCloud = {
 };
 ```
 
-* The `client` option is for creating `RPC` style client or `ROA` style client, default `ROA` style client.
-* [More options](https://github.com/aliyun/openapi-core-nodejs-sdk#usage)
+* 选项 `client` 决定了是创作 `RPCClient` 还是 `ROAClient`，默认是 `RPCClient`
+* [更多选项说明](https://github.com/aliyun/openapi-core-nodejs-sdk#usage)
 
-#### Call api
+#### 调用API
 
 ```js
 'use strict';

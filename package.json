@@ -1,0 +1,59 @@
+{
+  "name": "egg-alicloud-open-api",
+  "version": "1.0.0",
+  "description": "AliCloud OpenAPI plugin for egg",
+  "eggPlugin": {
+    "name": "aliCloud"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "aliyun",
+    "aliyun-sdk",
+    "alicloud",
+    "alicloud-sdk",
+    "alicloud-openApi"
+  ],
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.7"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "contributors": "^0.5.1",
+    "egg": "^2.22.2",
+    "egg-bin": "^4.13.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.17.1",
+    "eslint": "^6.0.0",
+    "eslint-config-egg": "^7.4.1",
+    "supertest": "^3.1.0",
+    "utility": "^1.13.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6, 8",
+    "license": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwanncheung/egg-alicloud-open-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/schwanncheung/egg-alicloud-open-api/issues"
+  },
+  "homepage": "https://github.com/schwanncheung/egg-alicloud-open-api#readme",
+  "author": "schwanncheung",
+  "license": "MIT"
+}
