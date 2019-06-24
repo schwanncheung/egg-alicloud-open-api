@@ -1,9 +1,11 @@
 'use strict';
 
 exports.aliCloud = {
-  type: 'RPC',
-  accessKeyId: '',
-  accessKeySecret: '',
-  endpoint: '',
-  apiVersion: '',
+  client: {
+    type: 'RPC',
+    accessKeyId: '',
+    accessKeySecret: '',
+    endpoint: '',
+    apiVersion: '',
+  },
 };

@@ -48,15 +48,17 @@ Configure information in ${app_root}/config/config.{env}.js:
 ```js
 // ${app_root}/config/config.${env}.js
 config.aliCloud = {
-  client: 'RPC',  // RPC or ROA, default RPC
-  accessKeyId: '<accessKeyId>',
-  accessKeySecret: '<accessKeySecret>',
-  endpoint: '<endpoint>',
-  apiVersion: '<apiVersion>'
+  client: {
+    clientType: 'RPC',  // RPC or ROA, default RPC
+    accessKeyId: '<accessKeyId>',
+    accessKeySecret: '<accessKeySecret>',
+    endpoint: '<endpoint>',
+    apiVersion: '<apiVersion>'
+  }
 };
 ```
 
-* The `client` option is for creating `RPC` style client or `ROA` style client, default `ROA` style client.
+* The `clientType` option is for creating `RPC` style client or `ROA` style client, default `ROA` style client.
 * [More options](https://github.com/aliyun/openapi-core-nodejs-sdk#usage)
 
 #### Call api

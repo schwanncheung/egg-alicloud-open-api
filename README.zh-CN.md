@@ -48,15 +48,17 @@ exports.aliCloud = {
 ```js
 // ${app_root}/config/config.${env}.js
 config.aliCloud = {
-  client: 'RPC',  // RPC or ROA, default RPC
-  accessKeyId: '<accessKeyId>',
-  accessKeySecret: '<accessKeySecret>',
-  endpoint: '<endpoint>',
-  apiVersion: '<apiVersion>'
+  client: {
+    clientType: 'RPC',  // RPC or ROA, default RPC
+    accessKeyId: '<accessKeyId>',
+    accessKeySecret: '<accessKeySecret>',
+    endpoint: '<endpoint>',
+    apiVersion: '<apiVersion>'
+  }
 };
 ```
 
-* 选项 `client` 决定了是创作 `RPCClient` 还是 `ROAClient`，默认是 `RPCClient`
+* 选项 `clientType` 决定了是创作 `RPCClient` 还是 `ROAClient`，默认是 `RPCClient`
 * [更多选项说明](https://github.com/aliyun/openapi-core-nodejs-sdk#usage)
 
 #### 调用API
